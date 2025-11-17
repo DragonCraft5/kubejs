@@ -5,3 +5,8 @@ StartupEvents.registry("block", event => {
     .noSoundType()
     .unbreakable()
 })
+
+StartupEvents.registry("item", event => {
+    event.create("brian_item")
+    .displayName("§7Brian Item")
+})
