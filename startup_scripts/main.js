@@ -9,6 +9,17 @@ StartupEvents.registry("block", event => {
 StartupEvents.registry("item", event => {
     event.create("brian_item")
     .displayName("§7Brian Item")
+
+    event.create("crack_item")
+    .displayName("Crack")
+    .food(food => {
+        food.hunger(-3)
+        food.saturation(0)
+        .effect("kubejs:crack", 600, 0, 1)
+        .alwaysEdible()
+        .fastToEat()
+        .meat()
+    })
 })
 
 StartupEvents.registry("mob_effect", event => {
