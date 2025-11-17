@@ -13,12 +13,11 @@ StartupEvents.registry("item", event => {
     event.create("crack_item")
     .displayName("Crack")
     .food(food => {
-        food.hunger(-3)
-        food.saturation(0)
+        food
         .effect("kubejs:crack", 600, 0, 1)
+        .effect("minecraft:hunger", 600, 0, 1)
         .alwaysEdible()
         .fastToEat()
-        .meat()
     })
 })
 
