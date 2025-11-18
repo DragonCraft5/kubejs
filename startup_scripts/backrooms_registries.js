@@ -14,5 +14,5 @@ StartupEvents.registry("block", event => {
     event.create("lamp")
     .displayName("Liminal Lamp")
     .unbreakable()
-    .lightLevel(15)
+    .lightLevel(1)
 })
