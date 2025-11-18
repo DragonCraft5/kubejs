@@ -14,10 +14,12 @@ StartupEvents.registry("item", event => {
     .displayName("Crack")
     .food(food => {
         food
+        .nutrition(5)
         .effect("kubejs:crack", 600, 0, 1)
         .effect("minecraft:hunger", 600, 0, 1)
         .alwaysEdible()
         .fastToEat()
+        .usingConvertsTo("minecraft:glass_bottle")
     })
 })
 
