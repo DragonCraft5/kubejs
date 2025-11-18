@@ -10,4 +10,9 @@ StartupEvents.registry("block", event => {
     event.create("carpet")
     .displayName("Liminal Carpet")
     .unbreakable()
+
+    event.create("lamp")
+    .displayName("Liminal Lamp")
+    .unbreakable()
+    .lightLevel(15)
 })
